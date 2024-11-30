@@ -20,4 +20,4 @@ A multiplayer memory card matching game with image search capabilities using the
 7. Player with the most matches wins!
 
 ## Play Now
-Visit [https://[YOUR-GITHUB-USERNAME].github.io/memory-game](https://[YOUR-GITHUB-USERNAME].github.io/memory-game) to play!
+Visit [https://ParsaProjects.github.io/memory-game](https://ParsaProjects.github.io/memory-game) to play!
