@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Matching Game</h1>
+        <div class="game-setup" id="gameSetup">
+            <div class="player-select">
+                <label for="playerCount">Number of Players:</label>
+                <select id="playerCount">
+                    <option value="2">2 Players</option>
+                    <option value="3">3 Players</option>
+                    <option value="4">4 Players</option>
+                </select>
+            </div>
+            <div class="image-setup">
+                <div class="upload-section">
+                    <h3>Upload Your Own Images</h3>
+                    <input type="file" id="imageUpload" accept="image/*" multiple>
+                </div>
+                <div class="generate-section">
+                    <h3>Or Search for Images</h3>
+                    <div class="generate-controls">
+                        <input type="text" id="imagePrompt" placeholder="Search for images (e.g., 'cute cats', 'space')">
+                        <input type="number" id="imageCount" min="2" max="10" value="4" placeholder="Number of images">
+                        <button id="generateImages">Search Images</button>
+                    </div>
+                    <div id="generatedImages" class="generated-images"></div>
+                </div>
+            </div>
+            <div class="game-controls">
+                <button id="startGame" disabled>Start Game</button>
+            </div>
+        </div>
+        <div class="player-scores" id="playerScores"></div>
+        <div class="current-player" id="currentPlayer"></div>
+        <div class="game-board" id="gameBoard"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
